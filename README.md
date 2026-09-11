@@ -1,3 +1,13 @@
+---
+title: AIRINDEX - Real-Time Airfare Intelligence
+emoji: ✈️
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # AIRINDEX — SIH26056 (Team CyberCrypt)
 
 Real-Time Airfare Price Intelligence Platform. This is the full-stack
