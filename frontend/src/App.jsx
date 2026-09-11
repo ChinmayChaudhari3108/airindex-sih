@@ -94,7 +94,22 @@ export default function App() {
       <header className="board">
         <div className="board-top">
           <div className="brand">
-            <span className="mark">CYBERCRYPT · SIH26056</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span className="mark">CYBERCRYPT · SIH26056</span>
+              <span style={{
+                fontSize: '11px',
+                padding: '2px 8px',
+                borderRadius: '12px',
+                background: api.isBackendLive() ? 'rgba(34,197,94,0.15)' : 'rgba(45,218,180,0.15)',
+                border: api.isBackendLive() ? '1px solid rgba(34,197,94,0.4)' : '1px solid rgba(45,218,180,0.4)',
+                color: api.isBackendLive() ? '#4ade80' : '#2ddab4',
+                fontWeight: 600,
+                fontFamily: 'monospace',
+                letterSpacing: '0.5px'
+              }}>
+                {api.isBackendLive() ? '● LIVE API' : '● CLOUD READY'}
+              </span>
+            </div>
             <h1>AIRINDEX</h1>
             <p>Real-Time Airfare Price Intelligence Platform — India domestic routes, powered by FastAPI + SQLite/PostgreSQL.</p>
           </div>
